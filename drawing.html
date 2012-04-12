@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" manifest="drawing.manifest">
+<head>
+<meta charset="utf-8" />
+
+<meta name="viewport" content="width = 320" />
+<meta name="viewport" content="initial-scale=1, user-scalable=no" />
+
+
+
+<title>Device orientated drawing</title>
+
+<link rel="stylesheet" href="styles/main.css" type="text/css" />
+
+
+<script type="text/javascript" src="scripts/drawing.js"></script>
+
+<script type="text/javascript">
+	window.onload = function () {
+    	drawingJs.init();
+	}
+</script>
+
+</head>
+
+<body id="drawing_body">
+
+<div id="initialise">
+	<h1>Device orientated drawing</h1>
+    <p><strong>Move your device to initialise...</strong></p>
+    <p class="useIphone">Works best on an iPhone with iOS 4.2 installed and the 'Portrait Orientation Lock' switched on</p>
+</div>
+
+<div id="intro">
+	<h1>Device orientated drawing</h1>
+    <p><strong>Just move your device to draw!!</strong></p>
+    <p><strong>Select your starting position to begin...</strong></p>
+    <p class="useIphone">Works best on an iPhone with iOS 4.2+ installed and the 'Portrait Orientation Lock' switched on</p>
+</div>
+
+<div id="drawing"></div>
+
+<ul id="colors">
+	<li><a href="#" data-hex="#000">black</a></li>
+    <li><a href="#" data-hex="#F00">red</a></li>
+    <li><a href="#" data-hex="#0F0">green</a></li>
+    <li><a href="#" data-hex="#00F">blue</a></li>
+</ul>
+
+<ul id="buttons">
+	<li><a id="pause" href="#">Pause</a></li>
+    <li><a id="reset" href="#">Reset</a></li>
+</ul>
+
+
+
+</body>
+</html>
